@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>ChronoGlobe: Mapping Country Development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="vgupt115.js"></script>
+
+
+    <link rel="stylesheet" href="h3Style.css">
+
+
+</head>
+
+<body>
+    <div class="rootContainer" id="root">
+        <br />
+        <h5 class="heading" style="text-align: center;">ChronoGlobe: Mapping Country Development</h5>
+        <!-- <h6 class="heading" style="text-align: center;">Vanshaj Gupta - vgupt115@asu.edu</h6> -->
+        <hr>
+        <div id="menuContainer">
+
+        </div>
+        <div class="row">
+            <div class="column left">
+                <label for="">Region : </label>
+            </div>
+            <div class="column right">
+                <form id="formId">
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" id="selectAllOption" value="SelectAll"
+                            onclick="selectDeselectAll()">Select All
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="South Asia">South Asia
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="Europe & Central Asia">Europe & Central
+                        Asia
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="Middle East & North Africa">Middle East &
+                        North
+                        Africa
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="Sub-Saharan Africa">Sub-Saharan Africa
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="Latin America & Caribbean">Latin America &
+                        Caribbean
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="East Asia & Pacific">East Asia & Pacific
+
+                    </label>
+                    <label class="checkbox-inline">
+                        <input class="checkBoxOption" type="checkbox" value="North America">North America
+                    </label>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="beeSwarmDiv" class="beeswarmChart" style="text-align: center;">
+        <div id="svgLegend"></div>
+        <div id="yAxisLegend"></div>
+        <svg id="beeswarmChartPlot">
+
+        </svg>
+    </div>
+    <div id="boxPlot" class="boxPlotChart" style="text-align: center;">
+        <svg id="boxPlotSvg"></svg>
+    </div>
+
+</body>
